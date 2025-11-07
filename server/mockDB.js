@@ -1,0 +1,22 @@
+// Моковая БД пользователей
+const users = [
+  { id: 1, login: 'admin', password: '123456', name: 'Админ' },
+  { id: 2, login: 'user', password: 'password', name: 'Пользователь' }
+];
+
+// Моковая БД товаров (массажей)
+const products = [
+  { id: 1, name: 'Sony WH-1000XM4', description: 'Sony делает вещи', price: 24999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/SonyWH.png' },
+  { id: 2, name: 'Apple AirPods Pro', description: 'Классика)', price: 19999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/airpodspro.png' },
+  { id: 3, name: 'Sennheiser HD 450BT', description: 'Сердито и качествено', price: 14999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/sennheiser450bt.png' },
+  { id: 4, name: 'JBL Tune 760NC', description: 'Это хорошо', price: 8999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/jbl760nc.png' },
+  { id: 5, name: 'Simgot ew200', description: 'Топ для игр', price: 4890, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/simgotew200.png' },
+  { id: 6, name: 'Bose QuietComfort 35', description: 'Для больших боссов', price: 22999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/bosequiet.png' },
+  { id: 7, name: 'Marshall Major IV', description: 'Для настоящих меломанов', price: 12999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/marhsalmajor.png' },
+  { id: 8, name: 'Audio-Technica ATH-M50x', description: 'Для трушных диджеев', price: 15999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/athm50x.jpg' },
+  { id: 9, name: 'Xiaomi Redmi Buds 4 Pro', description: 'Для настоящего спортсмена', price: 5999, image: 'https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/redmibuds.png' },
+  // Добавьте остальные товары аналогично
+];
+
+// Экспорт для использования в других модулях
+export { users, products };
