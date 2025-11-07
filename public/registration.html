@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FunkWave - Регистрация</title>
+</head>
+<body class="auth-page">
+  <header>
+    <div class="hl">
+      <a href="index.html"><p class="logo-txt">FunkWave</p></a>
+      <img src="https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/photo1694104816.png" class="logo-header" alt="logo-header">
+    </div>
+    <div class="hr">
+      <button class="mb" onclick="location.href='index.html'">На главную</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="mid-reg">
+      <div class="auth-container">
+        <div class="auth-tabs">
+          <button class="auth-tab" onclick="location.href='auth.html'">Вход</button>
+          <button class="auth-tab active">Регистрация</button>
+        </div>
+
+        <form class="auth-form" id="authForm">
+          <div class="form-group">
+            <label for="firstName">Имя</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Введите имя" required />
+            <label for="login">Логин</label>
+            <input type="text" id="login" name="login" placeholder="Придумайте логин" required />
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Придумайте пароль" required />
+          </div>
+          <button type="submit" class="auth-btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-text">Практическая работа 3 // Лупандин Константин // Магазин наушников</div>
+    <img src="https://nekbhxolrzcpriyfzxjw.supabase.co/storage/v1/object/public/Img%20for%20mdk/flint1.png" class="logo-footer" alt="logo">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="rofl">click here!(youtube)</a>
+  </footer>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

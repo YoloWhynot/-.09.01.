@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Админка | FunkWave</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-page">
+  <header>
+    <div class="hl">
+      <a href="index.html"><p class="logo-txt">FunkWave</p></a>
+    </div>
+    <div class="hr">
+      <a href="catalog.html" class="mb">Каталог</a>
+      <a href="#" id="logout" class="mb">Выйти</a>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <h1 class="admin-title">Панель администратора</h1>
+
+    <section id="users" class="tab-content active">
+      <div class="section-header">
+        <h2>Пользователи</h2>
+        <button class="add-btn" id="addUserBtn">+ Добавить</button>
+      </div>
+      <div class="cards-grid" id="usersCards"></div>
+    </section>
+
+    <section id="products" class="tab-content">
+      <div class="section-header">
+        <h2>Товары</h2>
+        <button class="add-btn" id="addProductBtn">+ Добавить</button>
+      </div>
+      <div class="cards-grid" id="productsCards"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle" class="modal-header">Редактировать</h3>
+      <form id="modalForm"></form>
+    </div>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
